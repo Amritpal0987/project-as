@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script> 
+$(document).ready(function(){
+    $("#Out").click(function(){
+        $("div").fadeOut();
+		
+    });
+	
+	$("#in").click(function(){
+        $("div").fadeIn();
+		
+    });
+	
+	$("#colour").click(function(){
+      $("#p1").css("color", "orange");
+    });
+	
+	
+	$("#up").click(function(){
+        $("p").slideUp();
+    });
+    $("#down").click(function(){
+        $("p").slideDown();
+    });
+	
+});
+
+</script> 
+</head>
+<body>
+<h1>Name: Amritpal Singh</h1>
+<h2>Student Id: c0727469</h2>
+<h3>Program: Emerging Technologies(CPCM G4) </h3>
+
+<br>
+<button id="Out">Fade out</button>
+<button id="in">Fade in</button>
+
+<button id="up">Slide up</button>
+<button id="down">Slide down</button>
+<button id="colour">change colour</button>
+
+<p>Fun with JQuery</p>
+<p id="p1">Amazon Fulfillment</p>
+<p>
+ With Fulfillment by Amazon (FBA), you store your products in Amazon's fulfillment centers, and we pick, pack, ship, and provide customer service for these products. FBA can help you scale your business and reach more customers.
+</p>
+<div style="background:#000080;height:100px;width:100px;position:absolute;"></div>
+
+</br>
+
+
+</body>
+</html>
